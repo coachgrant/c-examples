@@ -49,3 +49,15 @@ int main() {
 
   return 0;
 }
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  // Write your code here
+  string message = "Hello";
+  cout << message;
+  return 0;
+}
+
