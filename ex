@@ -61,3 +61,35 @@ int main() {
   return 0;
 }
 
+int myAge = 25;
+int votingAge = 18;
+
+cout << (myAge >= votingAge); // returns 1 (true), meaning 25 year olds are allowed to vote!
+
+int myAge = 25;
+int votingAge = 18;
+
+if (myAge >= votingAge) {
+  cout << "Old enough to vote!";
+} else {
+  cout << "Not old enough to vote.";
+}
+
+// Outputs: Old enough to vote!
+
+bool isLoggedIn = true;
+bool isAdmin = false;
+int securityLevel = 3; // 1 = highest
+
+if (isLoggedIn && (isAdmin || securityLevel <= 2)) {
+  cout << "Access granted.";
+} else {
+  cout << "Access denied.";
+}
+
+// Try changing securityLevel and isAdmin to test different outcomes:
+// securityLevel 1 = Access granted
+// securityLevel 2 = Access granted
+// securityLevel 3 = Access denied
+// securityLevel 4 = Access denied
+// If isAdmin = true, access is granted.
