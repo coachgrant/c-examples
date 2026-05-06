@@ -93,3 +93,28 @@ if (isLoggedIn && (isAdmin || securityLevel <= 2)) {
 // securityLevel 3 = Access denied
 // securityLevel 4 = Access denied
 // If isAdmin = true, access is granted.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int choice = 1;
+
+  // 1 = Coffee
+  // 2 = Tea
+
+  switch (choice) {
+    case 1:
+      cout << "You ordered Coffee";
+      break;
+
+    case 2:
+      cout << "You ordered Tea";
+      break;
+
+    default:
+      cout << "Invalid choice";
+  }
+
+  return 0;
+}
